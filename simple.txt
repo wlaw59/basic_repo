@@ -1,0 +1,125 @@
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop
+$ cd test
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/test
+$ cd ..
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop
+$ mkdir repo
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop
+$ cd repo
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ ls
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ git clone https://github.com/wlaw59/basic_repo.git
+Cloning into 'basic_repo'...
+warning: You appear to have cloned an empty repository.
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ touch index.html style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ ls
+basic_repo/  index.html  style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ ls
+basic_repo/  index.html  style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo
+$ git init
+Initialized empty Git repository in C:/Users/wlaw5/OneDrive/Desktop/repo/.git/
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add .
+error: 'basic_repo/' does not have a commit checked out
+fatal: adding files failed
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add index.html
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git commit -m"update"
+[master (root-commit) 9c6cadd] update
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git remote add orgin https://github.com/wlaw59/basic_repo.git
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git push orgin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 218 bytes | 109.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wlaw59/basic_repo.git
+ * [new branch]      master -> master
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add .
+error: 'basic_repo/' does not have a commit checked out
+fatal: adding files failed
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ ls
+basic_repo/  index.html  style.css
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ vim index.html
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+error: 'basic_repo/' does not have a commit checked out
+fatal: adding files failed
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ git push orgin master
+Everything up-to-date
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+$ vim index.html
+
+wlaw5@DESKTOP-CVG67VV MINGW64 ~/OneDrive/Desktop/repo (master)
+
